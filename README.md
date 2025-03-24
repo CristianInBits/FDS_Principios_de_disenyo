@@ -1,6 +1,3 @@
- # Principios de diseño
-
-
 # 📁 Calculadora SRP - Proyecto Java
 
 Este proyecto muestra **dos implementaciones** distintas del **Principio de Responsabilidad Única (SRP)** aplicadas a una calculadora.
