@@ -1,4 +1,4 @@
-package Solucion;
+package calculadora_interfaces;
 
 public class Calculadora {
 

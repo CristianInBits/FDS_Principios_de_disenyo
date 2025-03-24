@@ -1,7 +1,6 @@
-package Solucion;
-public class Dividir implements Operacion {
+package calculadora_sin_interfaces;
 
-    @Override
+public class Dividir {
     public int operar(int a, int b) {
         if (b == 0) {
             throw new IllegalArgumentException("No se puede dividir entre cero");

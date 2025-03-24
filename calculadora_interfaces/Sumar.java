@@ -1,4 +1,5 @@
-package Solucion;
+package calculadora_interfaces;
+
 public class Sumar implements Operacion {
     
     @Override

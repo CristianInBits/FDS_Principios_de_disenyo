@@ -1,4 +1,5 @@
-package Solucion;
+package calculadora_interfaces;
+
 public class Restar implements Operacion{
     
     @Override

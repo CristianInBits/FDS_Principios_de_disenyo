@@ -1,4 +1,4 @@
-package Solucion2;
+package calculadora_sin_interfaces;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,5 +8,6 @@ public class Main {
         System.out.println("Resta: " + calc.calcular(10, 5, 'R'));
         System.out.println("Multiplicación: " + calc.calcular(10, 5, 'M'));
         System.out.println("División: " + calc.calcular(10, 5, 'D'));
+        System.out.println("División: " + calc.calcular(10, 0, 'D'));
     }
 }
