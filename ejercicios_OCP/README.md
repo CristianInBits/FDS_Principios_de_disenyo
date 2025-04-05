@@ -5,7 +5,7 @@ Este repositorio contiene varios ejemplos prácticos que aplican el **Principio 
 
 ---
 
-## 📂 Ejercicios incluidos
+## 🧪 Ejercicios incluidos
 
 ### 1. `Shapes` – Calculadora de áreas polimórfica
 - Uso de una clase abstracta `Shape` con subclases como `Rectangle`, `Circle` y `Triangle`.

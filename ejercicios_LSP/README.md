@@ -6,7 +6,7 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Sust
 
 ---
 
-## 📂 Ejercicios incluidos
+## 🧪 Ejercicios incluidos
 
 ### 1. `Rectangulo y Cuadrado` – Herencia inapropiada
 - Se demuestra cómo un diseño basado en herencia puede **romper el LSP** cuando una subclase no respeta el comportamiento esperado por la superclase.
@@ -23,6 +23,15 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Sust
 - El método cliente ahora trabaja con un contrato claro y respetando la jerarquía.
 
 📁 Carpeta: `vehiculos_impuestos/`
+
+---
+
+### 3. `Empleados y Nómina` – Separación de capacidades
+- `EmpleadoFijo` y `EmpleadoFreelance` representan modelos distintos de pago.
+- La versión incorrecta rompe LSP al asumir que todos los empleados devuelven un salario mensual.
+- Se soluciona con una interfaz `Nomineable`, implementada solo por quienes generan nómina mensual, y se desacopla el servicio de cálculo del tipo base `Empleado`.
+
+📁 Carpeta: `empleados_nomina/`
 
 ---
 
