@@ -38,12 +38,13 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Sust
 
 ---
 
-### 🚗 `Vehículos e Impuestos` – Precondiciones más fuertes
-- `Impuestos.calcularImpuesto(Vehiculo)` fuerza un `cast` a `Coche`, asumiendo que todos los vehículos tienen matrícula, lo cual **viola LSP**.
-- Se corrige con una interfaz `Matriculable`, implementada solo por los vehículos que realmente tienen matrícula (`Coche`, `Camion`).
-- El método cliente ahora trabaja con un contrato claro y respetando la jerarquía.
+### 🌡️ `Sensores ambientales` – Separación de responsabilidades y cumplimiento de contrato
+- Se modelan sensores de temperatura, humedad y un sensor simulado para pruebas.
+- En la versión inicial, `SensorSimulado` lanzaba una excepción al leer valores, lo cual **violaba LSP**.
+- Se refactoriza usando una interfaz `Sensor` que garantiza que todos los sensores proporcionen un valor válido sin romper el flujo del cliente.
+- El sensor simulado devuelve un valor simbólico y respeta el contrato del sistema.
 
-📁 Carpeta: `vehiculos_impuestos/`
+📁 Carpeta: `sensores_monitor/`
 
 ---
 
@@ -56,6 +57,17 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Sust
 📁 Carpeta: `vehiculos_energia/`
 
 ---
+
+### 🚗 `Vehículos e Impuestos` – Precondiciones más fuertes
+- `Impuestos.calcularImpuesto(Vehiculo)` fuerza un `cast` a `Coche`, asumiendo que todos los vehículos tienen matrícula, lo cual **viola LSP**.
+- Se corrige con una interfaz `Matriculable`, implementada solo por los vehículos que realmente tienen matrícula (`Coche`, `Camion`).
+- El método cliente ahora trabaja con un contrato claro y respetando la jerarquía.
+
+📁 Carpeta: `vehiculos_impuestos/`
+
+---
+
+
 
 
 
