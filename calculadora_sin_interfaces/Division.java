@@ -1,10 +1,10 @@
 package calculadora_sin_interfaces;
 
-public class Dividir {
-    public int operar(int a, int b) {
-        if (b == 0) {
+public class Division {
+    public int dividir(int num1, int num2) {
+        if (num2 == 0) {
             throw new IllegalArgumentException("No se puede dividir entre cero");
         }
-        return a / b;
+        return num1 / num2;
     }
 }

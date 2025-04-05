@@ -2,7 +2,7 @@ package calculadora_sin_interfaces;
 
 public class Main {
     public static void main(String[] args) {
-        Calculadora calc = new Calculadora();
+        Calculadora2 calc = new Calculadora2();
 
         System.out.println("Suma: " + calc.calcular(10, 5, 'S'));
         System.out.println("Resta: " + calc.calcular(10, 5, 'R'));
