@@ -33,7 +33,6 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Sust
 
 📁 Carpeta: `empleados_nomina/`
 
----
 
 ## 🧠 Claves del principio:
 
