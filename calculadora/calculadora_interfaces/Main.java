@@ -1,4 +1,4 @@
-package calculadora_interfaces;
+package calculadora.calculadora_interfaces;
 
 public class Main {
 

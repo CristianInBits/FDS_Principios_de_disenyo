@@ -1,4 +1,4 @@
-package ejercicios_OCP.Vehicle;
+package ejercicios_OCP.vehicle;
 
 public class Main {
     public static void main(String[] args) {

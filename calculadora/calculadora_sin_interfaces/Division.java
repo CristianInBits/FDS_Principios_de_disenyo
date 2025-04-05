@@ -1,4 +1,4 @@
-package calculadora_sin_interfaces;
+package calculadora.calculadora_sin_interfaces;
 
 public class Division {
     public int dividir(int num1, int num2) {

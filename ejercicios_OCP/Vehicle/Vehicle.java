@@ -1,4 +1,4 @@
-package ejercicios_OCP.Vehicle;
+package ejercicios_OCP.vehicle;
 
 public class Vehicle implements Imprimible {
     public int getWheelCount() {

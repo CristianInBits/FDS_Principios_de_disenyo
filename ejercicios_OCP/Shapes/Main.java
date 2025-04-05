@@ -1,4 +1,4 @@
-package ejercicios_OCP.Shapes;
+package ejercicios_OCP.shapes;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ejercicios_OCP.Vehicle;
+package ejercicios_OCP.vehicle;
 
 public class Printer {
     public void print(Imprimible imprimible) {

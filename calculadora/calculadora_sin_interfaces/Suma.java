@@ -1,4 +1,4 @@
-package calculadora_sin_interfaces;
+package calculadora.calculadora_sin_interfaces;
 
 public class Suma {
     public int sumar(int num1, int num2) {

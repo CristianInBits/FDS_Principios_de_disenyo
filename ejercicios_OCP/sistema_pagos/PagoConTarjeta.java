@@ -1,4 +1,4 @@
-package ejercicios_OCP.SistemaPagos;
+package ejercicios_OCP.sistema_pagos;
 
 public class PagoConTarjeta implements MetodoPago {
     @Override

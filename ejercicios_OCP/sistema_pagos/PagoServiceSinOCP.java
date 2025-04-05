@@ -1,4 +1,4 @@
-package ejercicios_OCP.SistemaPagos;
+package ejercicios_OCP.sistema_pagos;
 
 public class PagoServiceSinOCP {
     public void procesarPago(String metodo, double cantidad) {
