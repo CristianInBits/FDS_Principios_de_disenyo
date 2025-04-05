@@ -10,7 +10,7 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Sust
 
 ---
 
-### `Sistema de Almacenamiento` – Sobrescritura que rompe contrato
+### 💾 `Sistema de Almacenamiento` – Sobrescritura que rompe contrato
 - Se implementa una jerarquía de clases para guardar archivos.
 - `AlmacenamientoSoloLectura` sobrescribe el método `guardar()` lanzando una excepción, lo cual **viola LSP**.
 - Se corrige mediante una interfaz `Almacenable`, que solo implementan las clases que realmente pueden guardar archivos (`AlmacenamientoLocal`, `AlmacenamientoNube`).
@@ -20,7 +20,7 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Sust
 
 ---
 
-### `Empleados y Nómina` – Separación de capacidades
+### 🙍‍♂️ `Empleados y Nómina` – Separación de capacidades
 - `EmpleadoFijo` y `EmpleadoFreelance` representan modelos distintos de pago.
 - La versión incorrecta rompe LSP al asumir que todos los empleados devuelven un salario mensual.
 - Se soluciona con una interfaz `Nomineable`, implementada solo por quienes generan nómina mensual, y se desacopla el servicio de cálculo del tipo base `Empleado`.
@@ -29,7 +29,7 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Sust
 
 ---
 
-### `Rectangulo y Cuadrado` – Herencia inapropiada
+### ⏹️ `Rectangulo y Cuadrado` – Herencia inapropiada
 - Se demuestra cómo un diseño basado en herencia puede **romper el LSP** cuando una subclase no respeta el comportamiento esperado por la superclase.
 - El método `cambiaAspecto()` espera modificar ancho sin afectar el alto, pero `Cuadrado` sobrescribe estos métodos rompiendo esa expectativa.
 - Se propone una solución separando responsabilidades y rompiendo la herencia.
@@ -38,7 +38,7 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Sust
 
 ---
 
-### `Vehículos e Impuestos` – Precondiciones más fuertes
+### 🚗 `Vehículos e Impuestos` – Precondiciones más fuertes
 - `Impuestos.calcularImpuesto(Vehiculo)` fuerza un `cast` a `Coche`, asumiendo que todos los vehículos tienen matrícula, lo cual **viola LSP**.
 - Se corrige con una interfaz `Matriculable`, implementada solo por los vehículos que realmente tienen matrícula (`Coche`, `Camion`).
 - El método cliente ahora trabaja con un contrato claro y respetando la jerarquía.
@@ -46,6 +46,17 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Sust
 📁 Carpeta: `vehiculos_impuestos/`
 
 ---
+
+### 🔋 `Vehículos eléctricos vs. gasolina` – Separación de capacidades
+- Se modela una jerarquía de vehículos que pueden ser eléctricos o a gasolina.
+- La versión inicial violaba LSP porque `CocheElectrico` sobrescribía el método `repostar()` lanzando una excepción.
+- Se corrige aplicando **interfaces por comportamiento**, separando `Conducible` de `Repostable`, y permitiendo que cada tipo de coche implemente solo lo que necesita.
+- El cliente (`EstacionServicio`) ahora trabaja con `Repostable`, evitando errores de sustitución.
+
+📁 Carpeta: `vehiculos_energia/`
+
+---
+
 
 
 ## 🧠 Claves del principio:
