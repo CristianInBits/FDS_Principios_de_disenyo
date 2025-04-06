@@ -40,6 +40,17 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Segr
 
 ---
 
+### 🧍 `Roles de usuario` – Permisos divididos en interfaces específicas
+- Se modelan distintos roles (`Admin`, `Editor`, `Lector`) en un sistema de gestión de contenido.
+- La versión incorrecta agrupaba todos los permisos en una sola interfaz `Usuario`, obligando a implementar métodos innecesarios y rompiendo ISP.
+- Se corrige dividiendo los permisos en interfaces pequeñas: `Creador`, `Editor`, `Eliminador`, `Lector`.
+- Cada clase implementa **solo las capacidades que le corresponden**, y los clientes usan interfaces según su nivel de acceso.
+
+📁 Carpeta: `roles_usuario/`
+
+---
+
+
 ## 🧠 Claves del principio:
 
 - Una interfaz debe ser **cohesiva**: métodos directamente relacionados entre sí.
