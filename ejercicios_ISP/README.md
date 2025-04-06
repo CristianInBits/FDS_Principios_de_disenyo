@@ -21,6 +21,16 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Segr
 
 ---
 
+### 🖨️ `Dispositivos de oficina` – Separación de capacidades funcionales
+- Se modelan distintos dispositivos como `ImpresoraSimple`, `Multifuncion`, `Fax` o `ImpresoraEscaner`.
+- La versión incorrecta forzaba a todos los dispositivos a implementar métodos como `escanear()` o `enviarFax()`, incluso si no tenían esa funcionalidad, lo que **violaba ISP**.
+- Se corrige dividiendo las capacidades en interfaces específicas: `Imprimible`, `Escaneable`, `Faxeable`.
+- Cada clase implementa **solo lo que realmente puede hacer**, y los clientes trabajan con interfaces según sus necesidades reales.
+
+📁 Carpeta: `dispositivos_oficina/`
+
+---
+
 ### 🚫 `Productos y edad recomendada` – Interfaz innecesariamente grande
 - Se parte de una interfaz `Product` que incluye información general y una edad recomendada.
 - Se demuestra que clases como `CD` no deberían verse forzadas a implementar métodos como `getRecommendedAge()`, lo cual **viola ISP**.
