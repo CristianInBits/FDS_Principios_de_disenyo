@@ -20,6 +20,16 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Inve
 
 ---
 
+### 📧 `Sistema de Notificaciones` – Abstracción e inyección de servicios
+- Se parte de un diseño donde la clase `Notificador` dependía directamente de un servicio de email (`EmailService`), lo que hacía que cualquier cambio en el canal de envío implicara modificar el código.
+- Se refactoriza para que `Notificador` dependa de una **interfaz común** `ServicioNotificacion`.
+- Las implementaciones concretas (`EmailService`, `SMSService`, `PushService`) se inyectan desde fuera, respetando completamente el principio DIP.
+- El resultado es un sistema desacoplado, extensible y fácil de mantener o testear.
+
+📁 Carpeta: `sistema_notificaciones/`
+
+---
+
 ## 🧠 Claves del principio:
 
 - Las **clases de alto nivel (lógica de negocio)** no deben depender directamente de clases de bajo nivel (detalles técnicos).
