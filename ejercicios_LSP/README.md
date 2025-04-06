@@ -20,6 +20,16 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Sust
 
 ---
 
+### 🐦 `Animales y vuelo` – Separación de capacidades por interfaz
+- Se modelan aves como `Pato`, `Pingüino` y `Avestruz`, con distintos comportamientos.
+- La versión inicial asumía que todas las aves podían volar, pero `Pingüino` sobrescribía el método `volar()` lanzando una excepción, **violando LSP**.
+- Se corrige dividiendo comportamientos en interfaces `Caminable` y `Volable`, permitiendo que cada clase implemente solo lo que puede hacer.
+- El cliente (`Zoo`) trabaja con capacidades específicas y evita errores de sustitución.
+
+📁 Carpeta: `animales_vuelo/`
+
+---
+
 ### 🙍‍♂️ `Empleados y Nómina` – Separación de capacidades
 - `EmpleadoFijo` y `EmpleadoFreelance` representan modelos distintos de pago.
 - La versión incorrecta rompe LSP al asumir que todos los empleados devuelven un salario mensual.
