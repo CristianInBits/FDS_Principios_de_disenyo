@@ -20,6 +20,16 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Inve
 
 ---
 
+### 💾 `Sistema de Almacenamiento` – Separación de lógica de guardado mediante abstracciones
+- Se modela un sistema que guarda archivos en distintas ubicaciones: disco local, nube y servidor FTP.
+- Inicialmente, `GestorDocumentos` dependía directamente de `AlmacenamientoLocal`, lo que impedía cambiar la lógica sin modificar código.
+- Se refactoriza creando una interfaz `Almacenamiento`, implementada por `AlmacenamientoLocal`, `AlmacenamientoCloud` y `AlmacenamientoFTP`.
+- `GestorDocumentos` ahora depende de la interfaz y permite inyectar cualquier estrategia de almacenamiento, respetando DIP.
+
+📁 Carpeta: `sistema_almacenamiento/`
+
+---
+
 ### 📧 `Sistema de Notificaciones` – Abstracción e inyección de servicios
 - Se parte de un diseño donde la clase `Notificador` dependía directamente de un servicio de email (`EmailService`), lo que hacía que cualquier cambio en el canal de envío implicara modificar el código.
 - Se refactoriza para que `Notificador` dependa de una **interfaz común** `ServicioNotificacion`.
