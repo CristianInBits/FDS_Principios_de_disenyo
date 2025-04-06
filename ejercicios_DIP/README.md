@@ -30,6 +30,15 @@ Este directorio contiene ejemplos prácticos que ilustran el **Principio de Inve
 
 ---
 
+### 🛒 `Sistema de Pagos` – Lógica desacoplada del método de pago
+- Se modela un sistema de pagos donde `CarritoDeCompras` inicialmente dependía directamente de `PagoTarjeta`, impidiendo el uso flexible de otros métodos como PayPal o Transferencia.
+- Se refactoriza creando una interfaz `MetodoPago`, y cada tipo de pago (`PagoTarjeta`, `PagoPayPal`, `PagoTransferencia`) implementa dicha interfaz.
+- El método de pago se inyecta en el carrito, logrando un sistema flexible, extensible y alineado con DIP.
+
+📁 Carpeta: `sistema_pagos/`
+
+---
+
 ## 🧠 Claves del principio:
 
 - Las **clases de alto nivel (lógica de negocio)** no deben depender directamente de clases de bajo nivel (detalles técnicos).
